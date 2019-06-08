@@ -1,9 +1,16 @@
+:root {
+    --primary-color: #563d7c;
+    --secondary-color: #432f61;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .sidebar {
-    left: 0;
-    top: 0;
-    padding-left: 15px;
-    background-color: #563d7c;
-    height: 98vh;
+    padding-left: 0;
+    background-color: var(--primary-color);
+    height: 100vh;
     width: 18%;
 }
 
@@ -12,32 +19,36 @@
         left: 0;
         top: 0;
         padding-left: 15px;
-        background-color: #563d7c;
+        background-color: var(--primary-color);
         height: 98vh;
         width: 25%;
     }
 }
 
 .box {
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid #1e282c;
+    background-color: var(--secondary-color);
 }
 
-
-
 .sidebar .sidebar-header {
-    margin: 5px;
     height: 2.7rem;
     color: aliceblue;
     background-color: transparent;
 }
 
+.sidebar .sidebar-header a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all .3s ease;
+}
+
+.sidebar .sidebar-header a:hover {
+    color: rgba(209, 209, 209, 0.9);
+}
+
 .sidebar .sidebar-header h3 {
     font-size: 2rem;
     text-align: center;
-}
-
-.sidebar .list-position {
-    padding-left: 1rem;
 }
 
 .sidebar .menu-point {
@@ -61,7 +72,7 @@
 }
 
 .sidebar .menu-under-point:hover {
-    background-color: #432f61;
+    background-color: var(--secondary-color);
     padding: 3px;
     width: 95%;
     border-radius: 2px;
@@ -89,7 +100,7 @@
 }
 
 .sidebar .menu-under-point-drop-down:hover {
-    background-color: #432f61;
+    background-color: var(--secondary-color);
     padding: 3px;
     width: 95%;
     border-radius: 2px;
@@ -114,14 +125,34 @@
     border-radius: 2px; 
 }
 
+/* Navbar */
+.nav-bar {
+    height: 2.8rem;
+    background-color: var(--primary-color);
+    width: 82%;
+    border-bottom: 2px solid #1e282c;
+}
+
+@media (max-width: 1280px) {
+    .nav-bar {
+        height: 2.8rem;
+        background-color: var(--primary-color);
+        width: 75%;
+        border-bottom: 2px solid #1e282c;
+    }
+}
 
 /* Sonstiges */
 
 .sidebar .active {
-    background-color: #432f61;
+    background-color: var(--secondary-color);
     border-radius: 2px;
 }
 
 .sidebar .active a {
     color: aliceblue;
+}
+
+.sidebar .list-position {
+    padding-left: 1rem;
 }
