@@ -1,0 +1,127 @@
+.sidebar {
+    left: 0;
+    top: 0;
+    padding-left: 15px;
+    background-color: #563d7c;
+    height: 98vh;
+    width: 18%;
+}
+
+@media (max-width: 1280px) {
+    .sidebar {
+        left: 0;
+        top: 0;
+        padding-left: 15px;
+        background-color: #563d7c;
+        height: 98vh;
+        width: 25%;
+    }
+}
+
+.box {
+    border-bottom: 2px solid lightgray;
+}
+
+
+
+.sidebar .sidebar-header {
+    margin: 5px;
+    height: 2.7rem;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.sidebar .sidebar-header h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sidebar .list-position {
+    padding-left: 1rem;
+}
+
+.sidebar .menu-point {
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 25px; 
+    margin-bottom: 10px;
+    border-bottom: 1px solid aliceblue;
+    width: 95%;
+    text-align: center;
+}
+
+/* Menu Punkte */
+
+.sidebar .menu-under-point {
+    margin-top: 5px;
+    width: 95%;
+    padding: 3px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.sidebar .menu-under-point:hover {
+    background-color: #432f61;
+    padding: 3px;
+    width: 95%;
+    border-radius: 2px;
+}
+
+.sidebar .menu-under-point a {
+    color: rgba(209, 209, 209, 0.65);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.sidebar .menu-under-point a:hover {
+    color: aliceblue;
+}
+
+
+/* Drop Down Menu */
+
+.sidebar .menu-under-point-drop-down {
+    margin-top: 5px;
+    width: 95%;
+    padding: 3px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.sidebar .menu-under-point-drop-down:hover {
+    background-color: #432f61;
+    padding: 3px;
+    width: 95%;
+    border-radius: 2px;
+}
+
+.sidebar .menu-under-point-drop-down a {
+    color: rgba(209, 209, 209, 0.65);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.sidebar .menu-under-point-drop-down a:hover {
+    color: aliceblue;
+}
+
+.sidebar .menu-under-point-drop-down .drop-down-option {
+    transition: all .3s ease;
+}
+
+.sidebar .menu-under-point-drop-down .drop-down-option:hover {
+    background-color: #191919;
+    border-radius: 2px; 
+}
+
+
+/* Sonstiges */
+
+.sidebar .active {
+    background-color: #432f61;
+    border-radius: 2px;
+}
+
+.sidebar .active a {
+    color: aliceblue;
+}
