@@ -1,17 +1,25 @@
-.content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+.wrapper {
     width: 82%;
+    height: 95.2vh;
 }
 
+.wrapper .content {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: auto;
+    min-height: 94.7vh;
+    width: 100%;
+}
+
+
 @media (max-width: 1280px) {
-    .content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
+    .wrapper {
         width: 75%;
-    } 
+        height: 94.9vh;
+    }
+
+    .wrapper .content {
+        height: auto;
+        min-height: 94.4vh;
+    }
 }
