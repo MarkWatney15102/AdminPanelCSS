@@ -8,7 +8,6 @@ body {
 }
 
 .sidebar {
-    padding-left: 0;
     background-color: var(--primary-color);
     height: 100vh;
     width: 18%;
@@ -20,7 +19,7 @@ body {
         top: 0;
         padding-left: 15px;
         background-color: var(--primary-color);
-        height: 98vh;
+        height: 100vh;
         width: 25%;
     }
 }
@@ -51,22 +50,24 @@ body {
     text-align: center;
 }
 
+/* Menu Punkte */
+
 .sidebar .menu-point {
     color: aliceblue;
     font-size: 18px;
     margin-top: 25px; 
+    margin-left: 8px;
     margin-bottom: 10px;
     border-bottom: 1px solid aliceblue;
     width: 95%;
     text-align: center;
 }
 
-/* Menu Punkte */
-
 .sidebar .menu-under-point {
     margin-top: 5px;
     width: 95%;
     padding: 3px;
+    margin-left: 8px;
     text-align: center;
     transition: all .3s ease;
 }
@@ -93,6 +94,7 @@ body {
 
 .sidebar .menu-under-point-drop-down {
     margin-top: 5px;
+    margin-left: 8px;
     width: 95%;
     padding: 3px;
     text-align: center;
@@ -125,11 +127,24 @@ body {
     border-radius: 2px; 
 }
 
+/* Relativ Menu Points */
+@media (max-width: 1280px) {
+    .sidebar .menu-point {
+        margin-left: 0px;
+    }
+    .sidebar .menu-under-point {
+        margin-left: 0px;
+    }
+    .sidebar .menu-under-point-drop-down {
+        margin-left: 0px;
+    }
+}
+
 /* Navbar */
 .nav-bar {
     height: 2.8rem;
     background-color: var(--primary-color);
-    width: 82%;
+    width: 100%;
     border-bottom: 2px solid #1e282c;
 }
 
@@ -137,9 +152,25 @@ body {
     .nav-bar {
         height: 2.8rem;
         background-color: var(--primary-color);
-        width: 75%;
+        width: 100%;
         border-bottom: 2px solid #1e282c;
     }
+}
+
+.nav-bar .href {
+    color: aliceblue;
+    margin-left: 15px;
+}
+
+.nav-bar .href a {
+    text-align: right;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all .3s ease;
+}
+
+.nav-bar .href a:hover {
+    color: rgba(209, 209, 209, 0.65);
 }
 
 /* Sonstiges */
